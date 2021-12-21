@@ -89,9 +89,8 @@
 
 
 
-
+    <!-- Javascript -->
     <script>
-        // ========= COUNTER =========
         document.addEventListener('DOMContentLoaded', () => {
             function counter(className, duration) {
                 const target = document.querySelector(className);
@@ -110,57 +109,9 @@
 
             counter(".counter1", 5);
             counter(".counter2", 10);
-            counter(".counter3", 5);
-            counter(".counter4", 1);
+            counter(".counter3", 12);
+            counter(".counter4", 6);
         })
-
-
-
-        // document.addEventListener('scroll', () => {
-        //     var scroll = window.scrollY;
-        //     if (scroll = 213) {
-        //         function counter(className) {
-        //             const target = document.querySelector(className);
-        //             var current = 0;
-        //             var end = target.getAttribute('data-target');
-
-        //             setInterval(() => {
-        //                 if (current < end) {
-        //                     current++;
-        //                     target.innerText = current;
-        //                 }
-        //             }, 10);
-        //         }
-
-        //         counter(".counter1");
-        //         counter(".counter2");
-        //         counter(".counter3");
-        //         counter(".counter4");
-
-        //     }
-        // })
-
-
-
-        // ========== Installed ===========
-        // Selector
-        // const counters = document.querySelectorAll('.counter');
-        // // Main function
-        // for (let n of counters) {
-        //     const updateCount = () => {
-        //         const target = +n.getAttribute('data-target');
-        //         const count = +n.innerText;
-        //         const speed = 5000; // change animation speed here
-        //         const inc = target / speed;
-        //         if (count < target) {
-        //             n.innerText = Math.ceil(count + inc);
-        //             setTimeout(updateCount, 1);
-        //         } else {
-        //             n.innerText = target;
-        //         }
-        //     }
-        //     updateCount();
-        // }
     </script>
 </body>
 
